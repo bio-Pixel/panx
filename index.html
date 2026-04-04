@@ -283,6 +283,47 @@
 .pub-item a.doi:visited {
   color: var(--accent2); /* 已访问的 DOI 颜色 */
 }
+
+ /* 样式修改 */
+.journal-name {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.pub-title {
+  font-weight: normal; /* 让出版物标题不加粗 */
+}
+
+.pub-item a {
+  color: var(--accent); /* DOI链接颜色 */
+  text-decoration: none; /* 去掉默认的下划线 */
+  font-weight: normal; /* DOI链接字体粗细 */
+}
+
+.pub-item a:hover {
+  text-decoration: underline; /* 鼠标悬停时添加下划线 */
+  color: var(--accent2); /* 鼠标悬停时颜色 */
+}
+
+.pub-meta {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* 特定设置 DOI 样式 */
+.pub-item a.doi {
+  font-weight: normal; /* DOI 字体不加粗 */
+  color: var(--accent3); /* DOI 颜色 */
+}
+
+.pub-item a.doi:visited {
+  color: var(--accent2); /* 已访问的 DOI 颜色 */
+}
+
+/* Awards 部分样式 */
+.timeline-title {
+  font-weight: normal; /* 让 Award 部分的标题不加粗 */
+}   
     
     .footer {
       margin-top: 32px;
@@ -413,42 +454,42 @@
   <div class="pub-list">
     <div class="pub-item">
       <div class="pub-title">
-        <b><u>Pan, X.</u></b>, <span style="color: var(--muted);">Mao, Y., Shi, Y., Xia, Z., Dun, R., He, R., Wu, H., Han, X., David, Charles, Jiang, P., Zhao, Y., Peng, J.</span> (2026). <span class="journal-name"><i>Large-Scale Single-Cell Dissection of Pancreatic Ductal Adenocarcinoma</i></span>. <a href="https://doi.org/10.1038/s41586-024-07698-1" target="_blank" class="doi">DOI: 10.1038/s41586-024-07698-1</a> Under Review
+        <b><u>Pan, X.</u></b>, <span style="color: var(--muted);">Mao, Y., Shi, Y., Xia, Z., Dun, R., He, R., Wu, H., Han, X., David, Charles, Jiang, P., Zhao, Y., Peng, J.</span> (2026). <span class="journal-name"><i>Large-Scale Single-Cell Dissection of Pancreatic Ductal Adenocarcinoma</i></span>. <a href="https://doi.org/10.1038/s41586-024-07698-1" target="_blank" class="doi">DOI: 10.1038/s41586-024-07698-1</a> <b><i>Nature</i></b> Under Review
       </div>
     </div>
     <div class="pub-item">
       <div class="pub-title">
-        <span style="color: var(--muted);">Mao, Y.*, Xia, Z.*,</span> <b><u>Pan, X.</u></b> *, <span style="color: var(--muted);">Xia, W., Peng, J.</span> (2026). <span class="journal-name"><i>B-cell deficiency limits exercise capacity by remodeling liver glutamate metabolism</i></span>. <a href="https://doi.org/10.1016/j.cell.2026.02.024" target="_blank" class="doi">DOI: 10.1016/j.cell.2026.02.024</a> Cell. In Press
+        <span style="color: var(--muted);">Mao, Y.*, Xia, Z.*,</span> <b><u>Pan, X.</u></b> *, <span style="color: var(--muted);">Xia, W., Peng, J.</span> (2026). <span class="journal-name"><i>B-cell deficiency limits exercise capacity by remodeling liver glutamate metabolism</i></span>. <a href="https://doi.org/10.1016/j.cell.2026.02.024" target="_blank" class="doi">DOI: 10.1016/j.cell.2026.02.024</a> <b><i>Cell</i></b>. In Press
       </div>
     </div>
     <div class="pub-item">
       <div class="pub-title">
-        <b><u>Pan, X.</u></b>, <span style="color: var(--muted);">Li, X., Dong, L., Liu, T., Zhang, M., Zhang, L., Zhang, X., Huang, L., Shi, W., Sun, H., et al.</span> (2024). <span class="journal-name"><i>Tumour vasculature at single-cell resolution</i></span>. <a href="https://doi.org/10.1038/s41586-024-07698-1" target="_blank" class="doi">DOI: 10.1038/s41586-024-07698-1</a> Nature
+        <b><u>Pan, X.</u></b>, <span style="color: var(--muted);">Li, X., Dong, L., Liu, T., Zhang, M., Zhang, L., Zhang, X., Huang, L., Shi, W., Sun, H., et al.</span> (2024). <span class="journal-name"><i>Tumour vasculature at single-cell resolution</i></span>. <a href="https://doi.org/10.1038/s41586-024-07698-1" target="_blank" class="doi">DOI: 10.1038/s41586-024-07698-1</a> <b><i>Nature</i></b>
       </div>
     </div>
     <div class="pub-item">
       <div class="pub-title">
-        <span style="color: var(--muted);">Ma, S.*,</span> <b><u>Pan, X.</u></b>*, <span style="color: var(--muted);">Gan, J., Guo, X., He, J., Hu, H., Wang, Y., Ning, S., and Zhi, H.</span> (2024). <span class="journal-name"><i>DNA methylation heterogeneity attributable to a complex tumor immune microenvironment prompts prognostic risk in glioma</i></span>. <a href="https://doi.org/10.1080/15592294.2024.2318506" target="_blank" class="doi">DOI: 10.1080/15592294.2024.2318506</a> Epigenetics
+        <span style="color: var(--muted);">Ma, S.*,</span> <b><u>Pan, X.</u></b>*, <span style="color: var(--muted);">Gan, J., Guo, X., He, J., Hu, H., Wang, Y., Ning, S., and Zhi, H.</span> (2024). <span class="journal-name"><i>DNA methylation heterogeneity attributable to a complex tumor immune microenvironment prompts prognostic risk in glioma</i></span>. <a href="https://doi.org/10.1080/15592294.2024.2318506" target="_blank" class="doi">DOI: 10.1080/15592294.2024.2318506</a> <b><i>Epigenetics</i></b>
       </div>
     </div>
     <div class="pub-item">
       <div class="pub-title">
-        <b><u>Pan, X.</u></b>, <span style="color: var(--muted);">Li, X., Sun, J., Xiong, Z., Hu, H., Ning, S., and Zhi, H.</span> (2022). <span class="journal-name"><i>Enhancer methylation dynamics drive core transcriptional regulatory circuitry in pan-cancer</i></span>. <a href="https://doi.org/10.1038/s41388-022-02359-x" target="_blank" class="doi">DOI: 10.1038/s41388-022-02359-x</a> Oncogene
+        <b><u>Pan, X.</u></b>, <span style="color: var(--muted);">Li, X., Sun, J., Xiong, Z., Hu, H., Ning, S., and Zhi, H.</span> (2022). <span class="journal-name"><i>Enhancer methylation dynamics drive core transcriptional regulatory circuitry in pan-cancer</i></span>. <a href="https://doi.org/10.1038/s41388-022-02359-x" target="_blank" class="doi">DOI: 10.1038/s41388-022-02359-x</a> <b><i>Oncogene</i></b>
       </div>
     </div>
     <div class="pub-item">
       <div class="pub-title">
-        <b><u>Pan, X.</u></b>, <span style="color: var(--muted);">Zhang, C., Wang, J., Wang, P., Gao, Y., Shang, S., Guo, S., Li, X., Zhi, H., and Ning, S.</span> (2022). <span class="journal-name"><i>Epigenome signature as an immunophenotype indicator prompts durable clinical immunotherapy benefits in lung adenocarcinoma</i></span>. <a href="https://doi.org/10.1093/bib/bbab481" target="_blank" class="doi">DOI: 10.1093/bib/bbab481</a> Briefings in Bioinformatics
+        <b><u>Pan, X.</u></b>, <span style="color: var(--muted);">Zhang, C., Wang, J., Wang, P., Gao, Y., Shang, S., Guo, S., Li, X., Zhi, H., and Ning, S.</span> (2022). <span class="journal-name"><i>Epigenome signature as an immunophenotype indicator prompts durable clinical immunotherapy benefits in lung adenocarcinoma</i></span>. <a href="https://doi.org/10.1093/bib/bbab481" target="_blank" class="doi">DOI: 10.1093/bib/bbab481</a> <b><i>Briefings in Bioinformatics</i></b>
       </div>
     </div>
     <div class="pub-item">
       <div class="pub-title">
-        <span style="color: var(--muted);">Li, X.*,</span> <b><u>Pan, X.</u></b>*, <span style="color: var(--muted);">Zhou, H., Wang, P., Gao, Y., Shang, S., Guo, S., Sun, J., Xiong, Z., Ning, S., et al.</span> (2022). <span class="journal-name"><i>Comprehensive characterization genetic regulation and chromatin landscape of enhancer-associated long non-coding RNAs and their implication in human cancer</i></span>. <a href="https://doi.org/10.1093/bib/bbab401" target="_blank" class="doi">DOI: 10.1093/bib/bbab401</a> Briefings in Bioinformatics
+        <span style="color: var(--muted);">Li, X.*,</span> <b><u>Pan, X.</u></b>*, <span style="color: var(--muted);">Zhou, H., Wang, P., Gao, Y., Shang, S., Guo, S., Sun, J., Xiong, Z., Ning, S., et al.</span> (2022). <span class="journal-name"><i>Comprehensive characterization genetic regulation and chromatin landscape of enhancer-associated long non-coding RNAs and their implication in human cancer</i></span>. <a href="https://doi.org/10.1093/bib/bbab401" target="_blank" class="doi">DOI: 10.1093/bib/bbab401</a> <b><i>Briefings in Bioinformatics</i></b>
       </div>
     </div>
     <div class="pub-item">
       <div class="pub-title">
-        <b><u>Pan, X.</u></b>, <span style="color: var(--muted);">Li, X., Ning, S., and Zhi, H.</span> (2021). <span class="journal-name"><i>Inferring SARS-CoV-2 functional genomics from viral transcriptome with identification of potential antiviral drugs and therapeutic targets</i></span>. <a href="https://doi.org/10.1186/s13578-021-00684-4" target="_blank" class="doi">DOI: 10.1186/s13578-021-00684-4</a> Cell & Bioscience
+        <b><u>Pan, X.</u></b>, <span style="color: var(--muted);">Li, X., Ning, S., and Zhi, H.</span> (2021). <span class="journal-name"><i>Inferring SARS-CoV-2 functional genomics from viral transcriptome with identification of potential antiviral drugs and therapeutic targets</i></span>. <a href="https://doi.org/10.1186/s13578-021-00684-4" target="_blank" class="doi">DOI: 10.1186/s13578-021-00684-4</a> <b><i>Cell & Bioscience</i></b>
       </div>
     </div>
   </div>
