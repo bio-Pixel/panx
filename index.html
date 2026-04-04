@@ -6,16 +6,22 @@
   <title>Xu Pan | Cancer Systems Biology & Bioinformatics</title>
   <style>
     :root {
-      --bg: #0d1117;
-      --panel: #161b22;
-      --border: #30363d;
-      --text: #c9d1d9;
-      --muted: #8b949e;
-      --heading: #f0f6fc;
-      --accent: #58a6ff;
-      --green: #3fb950;
-      --tag: #21262d;
+      --bg: #070b14;
+      --bg2: #0b1020;
+      --panel: rgba(12, 18, 34, 0.86);
+      --panel-strong: rgba(16, 24, 46, 0.96);
+      --border: rgba(82, 223, 255, 0.22);
+      --border-strong: rgba(255, 77, 166, 0.38);
+      --text: #d7e7ff;
+      --muted: #8fa6c9;
+      --heading: #f5fbff;
+      --accent: #59f3ff;
+      --accent2: #ff4da6;
+      --accent3: #8b5cf6;
+      --green: #00d18f;
+      --tag: rgba(89, 243, 255, 0.08);
       --white: #ffffff;
+      --shadow: 0 0 0 1px rgba(89,243,255,0.08), 0 0 24px rgba(89,243,255,0.08), 0 0 48px rgba(255,77,166,0.05);
     }
 
     * { box-sizing: border-box; }
@@ -23,7 +29,10 @@
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-      background: var(--bg);
+      background:
+        radial-gradient(circle at top left, rgba(89,243,255,0.08), transparent 28%),
+        radial-gradient(circle at top right, rgba(255,77,166,0.09), transparent 30%),
+        linear-gradient(180deg, var(--bg) 0%, var(--bg2) 100%);
       color: var(--text);
       line-height: 1.6;
     }
@@ -33,7 +42,10 @@
       text-decoration: none;
     }
 
-    a:hover { text-decoration: underline; }
+    a:hover {
+      text-decoration: none;
+      color: #9cf7ff;
+    }
 
     .container {
       max-width: 1200px;
@@ -55,6 +67,7 @@
       font-size: 18px;
       font-weight: 600;
       color: var(--heading);
+      min-width: 24px;
     }
 
     .nav {
@@ -66,6 +79,16 @@
     .nav a {
       color: var(--text);
       font-size: 14px;
+      padding: 6px 10px;
+      border: 1px solid transparent;
+      border-radius: 999px;
+      transition: 0.2s ease;
+    }
+
+    .nav a:hover {
+      border-color: var(--border);
+      background: rgba(89,243,255,0.06);
+      box-shadow: 0 0 12px rgba(89,243,255,0.08);
     }
 
     .layout {
@@ -83,16 +106,18 @@
     .card {
       background: var(--panel);
       border: 1px solid var(--border);
-      border-radius: 12px;
+      border-radius: 16px;
       padding: 22px;
       margin-bottom: 20px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
     }
 
     .avatar {
       width: 112px;
       height: 112px;
       border-radius: 50%;
-      background: linear-gradient(135deg, #1f6feb, #3fb950);
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
       display: flex;
       align-items: center;
       justify-content: center;
@@ -100,6 +125,7 @@
       font-weight: 700;
       color: var(--white);
       margin-bottom: 18px;
+      box-shadow: 0 0 24px rgba(89,243,255,0.25), 0 0 32px rgba(255,77,166,0.18);
     }
 
     h1 {
@@ -107,12 +133,14 @@
       font-size: 30px;
       color: var(--heading);
       line-height: 1.2;
+      letter-spacing: 0.2px;
     }
 
     .subtitle {
       margin-top: 8px;
-      color: var(--muted);
+      color: var(--accent);
       font-size: 16px;
+      text-shadow: 0 0 10px rgba(89,243,255,0.12);
     }
 
     .institution {
@@ -131,17 +159,23 @@
       display: inline-block;
       text-align: center;
       padding: 10px 14px;
-      border-radius: 8px;
+      border-radius: 10px;
       border: 1px solid var(--border);
-      background: #21262d;
+      background: rgba(89,243,255,0.06);
       color: var(--heading);
       font-weight: 600;
       font-size: 14px;
+      transition: 0.2s ease;
+    }
+
+    .btn:hover {
+      background: rgba(89,243,255,0.12);
+      box-shadow: 0 0 16px rgba(89,243,255,0.10);
     }
 
     .btn.primary {
-      background: #238636;
-      border-color: rgba(240,246,252,0.1);
+      background: linear-gradient(135deg, rgba(0,209,143,0.18), rgba(89,243,255,0.18));
+      border-color: rgba(0,209,143,0.35);
     }
 
     .meta {
@@ -162,6 +196,7 @@
       color: var(--heading);
       padding-bottom: 10px;
       border-bottom: 1px solid var(--border);
+      text-shadow: 0 0 12px rgba(89,243,255,0.08);
     }
 
     .tags {
@@ -183,7 +218,7 @@
 
     .timeline-item {
       padding: 14px 0;
-      border-bottom: 1px solid rgba(48,54,61,0.65);
+      border-bottom: 1px solid rgba(82,223,255,0.12);
     }
 
     .timeline-item:last-child {
@@ -217,8 +252,14 @@
     .pub-item {
       padding: 16px;
       border: 1px solid var(--border);
-      border-radius: 10px;
-      background: rgba(13,17,23,0.45);
+      border-radius: 12px;
+      background: rgba(9,14,27,0.72);
+      transition: 0.2s ease;
+    }
+
+    .pub-item:hover {
+      border-color: var(--border-strong);
+      box-shadow: 0 0 20px rgba(255,77,166,0.08);
     }
 
     .pub-title {
@@ -252,10 +293,11 @@
 <body>
   <div class="container">
     <div class="topbar">
-      <div class="brand">Xu Pan</div>
+      <div class="brand"></div>
       <div class="nav">
         <a href="#about">About</a>
         <a href="#education">Education</a>
+        <a href="#awards">Awards</a>
         <a href="#publications">Publications</a>
         <a href="#contact">Contact</a>
       </div>
@@ -276,21 +318,17 @@
           </div>
 
           <div class="meta">
-            <div>📍 Beijing, China</div>
-            <div>🧬 Single-cell biology · Spatial transcriptomics · Cancer systems biology</div>
             <div>🏫 Tsinghua University</div>
           </div>
         </div>
+        </div>
 
         <div class="card">
-          <div style="font-weight:600;color:var(--heading);margin-bottom:10px;">Research Interests</div>
-          <div class="tags">
-            <span class="tag">Single-cell omics</span>
-            <span class="tag">Spatial transcriptomics</span>
-            <span class="tag">Tumor microenvironment</span>
-            <span class="tag">PDAC</span>
-            <span class="tag">Cancer evolution</span>
-            <span class="tag">Computational biology</span>
+          <div style="font-weight:600;color:var(--heading);margin-bottom:12px;">Profiles</div>
+          <div class="button-group">
+            <a class="btn" href="https://scholar.google.com/" target="_blank">Google Scholar</a>
+            <a class="btn" href="https://www.researchgate.net/" target="_blank">ResearchGate</a>
+            <a class="btn" href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
           </div>
         </div>
       </aside>
@@ -311,7 +349,7 @@
         </section>
 
         <section class="card section" id="education">
-          <h2>Education & Awards</h2>
+          <h2>Education</h2>
 
           <div class="timeline-item">
             <div class="timeline-title">Tsinghua University, Beijing, China</div>
@@ -319,8 +357,6 @@
             <ul>
               <li>Ph.D. candidate in Basic Medical Sciences</li>
               <li>Supervisor: Yupei Zhao</li>
-              <li>Outstanding Papers of Sichuan-Chongqing Science and Technology Academic Conference, 2024</li>
-              <li>Representative Achievements of Chongqing Basic Research, 2024</li>
             </ul>
           </div>
 
@@ -329,8 +365,6 @@
             <div class="timeline-date">2020–2023</div>
             <ul>
               <li>M.S. in Biomedical Engineering</li>
-              <li>National Scholarship for Postgraduates, China (2022–2023)</li>
-              <li>School Scholarship, Harbin Medical University (2020–2023)</li>
             </ul>
           </div>
 
@@ -339,11 +373,51 @@
             <div class="timeline-date">2015–2020</div>
             <ul>
               <li>B.S. in Bioinformatics</li>
-              <li>Outstanding Graduates (2020)</li>
-              <li>National 2nd Prize, Contemporary Undergraduate Statistical Contest in Modeling, China (2019)</li>
-              <li>1st Prize, "Challenge Cup" National College Student Business Plan Competition, China (2019)</li>
-              <li>School Scholarship, Harbin Medical University (2015–2020)</li>
             </ul>
+          </div>
+        </section>
+
+        <section class="card section" id="awards">
+          <h2>Awards</h2>
+
+          <div class="timeline-item">
+            <div class="timeline-title">Outstanding Papers of Sichuan-Chongqing Science and Technology Academic Conference</div>
+            <div class="timeline-date">2024</div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-title">Representative Achievements of Chongqing Basic Research</div>
+            <div class="timeline-date">2024</div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-title">National Scholarship for Postgraduates, China</div>
+            <div class="timeline-date">2022–2023</div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-title">School Scholarship, Harbin Medical University</div>
+            <div class="timeline-date">2020–2023</div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-title">Outstanding Graduates</div>
+            <div class="timeline-date">2020</div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-title">National 2nd Prize, Contemporary Undergraduate Statistical Contest in Modeling, China</div>
+            <div class="timeline-date">2019</div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-title">1st Prize, "Challenge Cup" National College Student Business Plan Competition, China</div>
+            <div class="timeline-date">2019</div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-title">School Scholarship, Harbin Medical University</div>
+            <div class="timeline-date">2015–2020</div>
           </div>
         </section>
 
