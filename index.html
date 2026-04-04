@@ -249,14 +249,13 @@
   font-size: 14px;
 }
 
-/* 样式修改 */
 .journal-name {
   font-weight: bold;
   font-style: italic;
 }
 
 .pub-title {
-  font-weight: bold;
+  font-weight: normal; /* 确保标题以正常字体显示，去掉加粗 */
 }
 
 .pub-item a {
@@ -277,7 +276,7 @@
 
 /* 特定设置 DOI 样式 */
 .pub-item a.doi {
-  font-weight: bold; /* DOI 字体加粗 */
+  font-weight: normal; /* DOI 字体不加粗 */
   color: var(--accent3); /* DOI 颜色 */
 }
 
