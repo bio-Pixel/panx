@@ -231,7 +231,23 @@
       color: var(--muted);
       font-size: 14px;
     }
+    
+.timeline-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.timeline-title {
+  font-weight: 600;
+  color: var(--heading);
+  flex-grow: 1; /* Ensures title takes available space */
+}
+
+.timeline-date {
+  color: var(--muted);
+  font-size: 14px;
+}
     .footer {
       margin-top: 32px;
       color: var(--muted);
