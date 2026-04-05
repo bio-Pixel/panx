@@ -7,7 +7,7 @@ pub_date:       "2022"
 abstract: >-
   This study reveals how enhancer methylation dynamics regulate transcriptional circuits across multiple cancer types.
 authors:
-  - Xu Pan*
+  - Xu Pan
   - X Li
   - J Sun
   - Z Xiong
