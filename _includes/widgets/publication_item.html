@@ -1,6 +1,5 @@
 {% assign item = include.item %}
-<!-- Desktop view -->
-<div class="d-none d-md-block {% unless include.hide_bottom_border %}border-bottom{% endunless %} border-gray py-4 {% if include.first %}rounded-top{% endif %}">
+<div class="publication-item {% unless include.hide_bottom_border %}border-bottom{% endunless %} border-gray py-4 {% if include.first %}rounded-top{% endif %}">
     <div class="row align-items-start">
         <div class="col-md-3 col-lg-2 mb-3 mb-md-0">
             {%- if item.cover -%}
@@ -16,14 +15,17 @@
         </div>
         <div class="col-md-9 col-lg-10">
             <div class="ps-md-3">
-                <h4 class="mb-2 fw-semibold">
-                    {{ item.title }}
-                    <small class="text-muted">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                    <h4 class="mb-0 fw-semibold">
+                        {{ item.title }}
                         {% if item.highlight %}<span class="badge bg-warning text-dark ms-2">Featured</span>{% endif %}
-                    </small>
-                </h4>
+                    </h4>
+                    {% if item.selected %}
+                        <span class="badge bg-primary bg-gradient text-white">Selected</span>
+                    {% endif %}
+                </div>
 
-                <div class="mb-2">
+                <div class="mb-3">
                     {% include widgets/author_list.html authors=item.authors %}
                 </div>
 
@@ -55,11 +57,11 @@
                     {% for link in item.links %}
                     {% if link[1].url %}
                     <a class="btn btn-sm btn-outline-primary" target="{{ link[1]['target'] }}" href="{{ link[1]['url'] }}">
-                        <i class="fas fa-external-link-alt me-1"></i>{{ link[0] }}
+                        <i class="fas fa-{{ link[0] | replace: 'PDF', 'file-pdf' | replace: 'DOI', 'external-link-alt' }} me-1"></i>{{ link[0] }}
                     </a>
                     {% else %}
                     <a class="btn btn-sm btn-outline-primary" target="_blank" href="{{ link[1] }}">
-                        <i class="fas fa-external-link-alt me-1"></i>{{ link[0] }}
+                        <i class="fas fa-{{ link[0] | replace: 'PDF', 'file-pdf' | replace: 'DOI', 'external-link-alt' }} me-1"></i>{{ link[0] }}
                     </a>
                     {% endif %}
                     {% endfor %}
@@ -70,56 +72,36 @@
     </div>
 </div>
 
-<!-- Mobile view -->
-<div class="d-md {% unless include.hide_bottom_border %}border-bottom{% endunless %} border-gray {% if include.first %}rounded-top{% endif %}">
-    <div class="p-4">
-        {%- if item.cover -%}
-        <img data-src="{{ item.cover | relative_url }}" alt="{{ item.title }}" class="lazy w-100 rounded mb-3" style="max-height: 150px; object-fit: cover;" src="{{ '/assets/images/empty_300x200.png' | relative_url }}">
-        {%- endif -%}
+<style>
+.publication-item {
+    transition: background-color 0.2s ease;
+}
 
-        <h4 class="mb-2 fw-semibold">
-            {{ item.title }}
-            {% if item.highlight %}<span class="badge bg-warning text-dark">Featured</span>{% endif %}
-        </h4>
+.publication-item:hover {
+    background-color: #f8f9fa;
+}
 
-        <div class="mb-2">
-            {% include widgets/author_list.html authors=item.authors %}
-        </div>
+.btn-outline-primary {
+    border-color: #0d6efd;
+    color: #0d6efd;
+}
 
-        <div class="mb-3">
-            <p class="text-muted mb-1">
-                <i class="fas fa-journal-wh me-2"></i>
-                <strong>{{ item.pub_pre }}<i>{{ item.pub }}</i>{{ item.pub_post }}</strong>
-                <span class="ms-2">{{ item.pub_date }}</span>
-                {% if item.pub_last %}
-                    <span class="ms-2">| {{ item.pub_last }}</span>
-                {% endif %}
-            </p>
-        </div>
+.btn-outline-primary:hover {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
 
-        {% if item.abstract %}
-        <div class="mb-3">
-            <h6 class="text-primary mb-2">
-                <i class="fas fa-align-left me-2"></i>Abstract
-            </h6>
-            <p class="text-muted small">{{ item.abstract }}</p>
-        </div>
-        {% endif %}
+.badge {
+    font-weight: 500;
+}
 
-        {% if item.links.size > 0 %}
-        <div class="d-flex flex-wrap gap-2">
-            {% for link in item.links %}
-            {% if link[1].url %}
-            <a class="btn btn-sm btn-outline-primary" target="{{ link[1]['target'] }}" href="{{ link[1]['url'] }}">
-                <i class="fas fa-external-link-alt me-1"></i>{{ link[0] }}
-            </a>
-            {% else %}
-            <a class="btn btn-sm btn-outline-primary" target="_blank" href="{{ link[1] }}">
-                <i class="fas fa-external-link-alt me-1"></i>{{ link[0] }}
-            </a>
-            {% endif %}
-            {% endfor %}
-        </div>
-        {% endif %}
-    </div>
-</div>
+/* Publication image lazy load */
+.lazy {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.lazy.loaded {
+    opacity: 1;
+}
+</style>
