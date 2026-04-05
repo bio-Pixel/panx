@@ -1,42 +1,13 @@
 {% assign publications = include.publications %}
-<div class="card border-0 shadow-sm">
-    <div class="card-body p-4">
-        {% if include.title %}
-            <h5 class="card-title mb-4">
-                <i class="fas fa-star text-warning me-2"></i>{{ include.title }}
-            </h5>
-        {% else %}
-            <h5 class="card-title mb-4">
-                <i class="fas fa-star text-warning me-2"></i>Selected Recent Publications
-            </h5>
-        {% endif %}
-
-        <div class="list-group list-group-flush">
-            {% for item in publications limit:include.limit %}
-            <div class="list-group-item border-0 px-0">
-                <div class="d-flex align-items-start">
-                    {% if item.highlight %}
-                        <span class="badge bg-danger rounded-pill me-2 mt-1">Featured</span>
-                    {% endif %}
-                    <div class="flex-grow-1">
-                        <h6 class="mb-1 fw-normal">{{ item.title }}</h6>
-                        <p class="mb-1 small text-muted">
-                            {% include widgets/author_list.html authors=item.authors %}
-                        </p>
-                        <p class="mb-0 small">
-                            <strong>{{ item.pub }}</strong> {{ item.pub_date }}
-                        </p>
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
-        </div>
-
-        <div class="text-center mt-4">
-            <a href="{{ 'publications' | relative_url }}" class="btn btn-outline-primary btn-sm">
-                View All Publications <i class="fas fa-arrow-right ms-2"></i>
-            </a>
-        </div>
-    </div>
+<div class="my-3 p-0 bg-white shadow-sm rounded-xl">
+    <h6 class="border-bottom border-gray p-3 mb-0">
+        {% if include.title %}{{ include.title }}{% else %}<i class="fas fa-star"></i> Selected Recent Publications{% endif %}
+        <a href="{{ 'publications' | relative_url }}">(view all <i class="fas fa-angle-double-right"></i>)</a>
+    </h6>
+    {% for item in publications limit:include.limit %}
+        {% include widgets/publication_item.html item=item first=false last=false %}
+    {% endfor %}
+    <h6 class="d-block p-3 mt-0 text-right">
+        <a href="{{ 'publications' | relative_url }}">All publications <i class="fas fa-angle-double-right"></i></a>
+    </h6>
 </div>
-
