@@ -1,0 +1,64 @@
+primary_name: "Xu"
+secondary_name: "Pan"
+navbar_name: "Xu Pan"
+
+positions:
+- name: Ph.D. Candidate
+- name: Tsinghua University
+  logo: /assets/images/badges/tsinghua.png
+
+email: "panx9623@gmail.com"
+cv_link: https://panx9623.github.io/cv.pdf
+gscholar: t6gDZSUAAAAJ
+github: panx9623
+linkedin: xu-pan-6aa9353b8
+orcid: 0000-0000-0000-0000
+
+short_bio_text_justify: false
+short_bio: >-
+  <p>
+    I am a Ph.D. candidate in Basic Medical Sciences at Tsinghua University, working at the interface of
+    cancer systems biology, bioinformatics, and multi-omics analysis. My research focuses on understanding
+    tumor ecosystem heterogeneity and microenvironment organization through integrative analysis of
+    single-cell genomics, spatial transcriptomics, and proteomics.
+  </p>
+  <p>
+    My work includes building high-resolution atlases of tumor vasculature at single-cell resolution (Nature, 2024),
+    deciphering re-epithelialization programs in pancreatic ductal adenocarcinoma (Cancer Cell, in press),
+    and identifying prognostic biomarkers through epigenomic and proteomic profiling. I am particularly
+    interested in translating multi-omics insights into clinically relevant mechanisms that shape cancer
+    progression and therapeutic response. Outside of academia, I love reading and exploring new frontiers
+    in biomedical research.
+  </p>
+  <p>
+    I am on the academic job market in the 2025 Fall cycle. Please feel free to reach out if you think
+    I could be a good fit!
+  </p>
+
+portrait_url: /assets/images/photos/portrait.jpg
+portrait_caption: >-
+  Photo of Xu Pan
+
+education:
+- name: Tsinghua University
+  logo: /assets/images/badges/tsinghua.png
+  position: >-
+    Ph.D. in Basic Medical Sciences<br/>
+    Advisor: Yupei Zhao
+  date: Sep. 2023 - present
+- name: Harbin Medical University
+  logo: /assets/images/badges/hmu.png
+  position: B.S. and M.S. in Bioinformatics
+  date: Sep. 2015 - Jul. 2023
+
+awards:
+- name: Doctoral Student Program of the Young S&T Talents Cultivation Project, China
+  date: 2025
+- name: Life Star Scholarship, Center for Life Sciences (CLS), Tsinghua University
+  date: 2025
+- name: Outstanding Papers of Sichuan-Chongqing Science and Technology Academic Conference
+  date: 2024
+- name: Representative Achievements of Chongqing Basic Research
+  date: 2024
+- name: National Scholarship for Postgraduates, China
+  date: 2023
