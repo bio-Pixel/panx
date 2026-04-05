@@ -7,8 +7,8 @@ pub_date:       "2022"
 abstract: >-
   Comprehensive characterization of genetic regulation and chromatin landscape of enhancer-associated lncRNAs in cancer.
 authors:
-  - X Li
-  - Xu Pan
+  - X Li*
+  - Xu Pan*
   - H Zhou
   - P Wang
   - Y Gao
@@ -17,7 +17,6 @@ authors:
   - J Sun
   - Z Xiong
   - S Ning
-  - et al.
 links:
   Paper: https://doi.org/10.1093/bib/bbab401
 ---
