@@ -36,7 +36,6 @@ authors:
   - J Peng
   - M Chen
   - C David
-  - et al.
 links:
   Paper: https://doi.org/10.1016/j.cell.2026.01.022
 ---
