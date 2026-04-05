@@ -4,7 +4,7 @@ navbar_name: "Xu Pan"
 
 positions:
 - name: Tsinghua University
-  logo: /assets/images/badges/tsinghua.png
+  logo: assets/images/badges/tsinghua.png
 
 email: "panx9623@gmail.com"
 cv_link: https://panx9623.github.io/cv.pdf
@@ -40,13 +40,13 @@ portrait_caption: >-
 
 education:
 - name: Tsinghua University
-  logo: /assets/images/badges/tsinghua.png
+  logo: assets/images/badges/tsinghua.png
   position: >-
     Ph.D. in Basic Medical Sciences<br/>
     Advisor: Yupei Zhao
   date: Sep. 2023 - present
 - name: Harbin Medical University
-  logo: /assets/images/badges/hmu.png
+  logo: assets/images/badges/hmu.png
   position: B.S. and M.S. in Bioinformatics
   date: Sep. 2015 - Jul. 2023
 

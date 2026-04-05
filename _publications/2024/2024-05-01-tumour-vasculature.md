@@ -6,7 +6,7 @@ pub:            "Nature"
 pub_date:       "2024"
 abstract: >-
   Single-cell dissection of tumor vasculature reveals the cellular composition and functional states of blood vessels in cancer.
-cover:          /assets/images/covers/nature_cover.jpg
+cover:          /assets/images/covers/cover1.jpg
 authors:
   - Xu Pan*
   - X Li
