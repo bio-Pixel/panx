@@ -2,10 +2,11 @@
 title:          "Large-Scale Single-Cell Dissection of Pancreatic Ductal Adenocarcinoma"
 date:           2026-01-01 00:01:00 +0800
 selected:       true
-pub_pre:        "Under Review"
 pub_date:       "2026"
 abstract: >-
   Large-scale single-cell analysis of pancreatic ductal adenocarcinoma to understand tumor heterogeneity and microenvironment.
+cover:          /assets/images/covers/coverPDAC.jpg
+pub_last:       ' <span class="badge badge-pill badge-publication badge-success">Under Review</span>'
 authors:
   - Xu Pan
   - Y Mao
