@@ -9,24 +9,126 @@ body_attr: >-
 {% assign pubs_by_year = site.publications | sort: "date" | reverse | group_by_exp: "item", "item.date | date: '%Y'" %}
 
 <div class="row">
-    <div class="col-12 col-lg-10">
+    <div class="col-12 col-lg-9">
+        <div class="mb-4 text-center">
+            <h1 class="display-5 fw-bold text-primary">
+                <i class="fas fa-book-open me-3"></i>Publications
+            </h1>
+            <p class="lead text-muted">My research publications and scholarly work</p>
+            <hr class="my-4">
+        </div>
+
         {% for year in pubs_by_year %}
         {% assign num_papers = year.items | size %}
-        <h2 class="pt-4" id="year-{{ year.name }}">{{ year.name }}</h2>
-        <div class="my-0 p-0 bg-white shadow-sm rounded-xl">
-            {% for item in year.items %}
-                {% include widgets/publication_item.html item=item hide_bottom_border=forloop.last first=forloop.first last=forloop.last %}
-            {% endfor %}
+        <div class="mb-5">
+            <div class="d-flex align-items-center mb-4">
+                <h2 class="pt-3 mb-0" id="year-{{ year.name }}">
+                    <span class="badge bg-primary bg-gradient text-white me-3 py-2 px-3 rounded-pill">
+                        {{ year.name }}
+                    </span>
+                    <span class="text-muted small">({{ num_papers }} {{ num_papers | pluralize: 'publication', 'publications' }})</span>
+                </h2>
+            </div>
+
+            <div class="accordion" id="accordion-{{ year.name }}">
+                {% for item in year.items %}
+                <div class="card mb-3 border-0 shadow-sm">
+                    <div class="card-header bg-white border-0 py-3 px-4">
+                        <button class="btn btn-link text-decoration-none w-100 d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{ item.id | truncate: 10, '' }}-{{ forloop.index }}" aria-expanded="false">
+                            <div class="d-flex align-items-center w-100">
+                                <div class="flex-shrink-0 me-3">
+                                    {% if item.cover %}
+                                    <img data-src="{{ item.cover | relative_url }}" alt="{{ item.title }}" class="lazy rounded" style="width: 60px; height: 40px; object-fit: cover;">
+                                    {% else %}
+                                    <div class="bg-light rounded d-flex align-items-center justify-content-center" style="width: 60px; height: 40px;">
+                                        <i class="fas fa-file-alt text-muted"></i>
+                                    </div>
+                                    {% endif %}
+                                </div>
+                                <div class="flex-grow-1 text-start">
+                                    <h5 class="mb-1 fw-normal">{{ item.title }}</h5>
+                                    <p class="mb-0 small text-muted">{{ item.authors | truncate: 80, '...' }}</p>
+                                </div>
+                            </div>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div id="collapse-{{ item.id | truncate: 10, '' }}-{{ forloop.index }}" class="collapse {% if forloop.first %}show{% endif %}" data-bs-parent="#accordion-{{ year.name }}">
+                        <div class="card-body p-4">
+                            {% include widgets/publication_item.html item=item hide_bottom_border=forloop.first first=forloop.first last=forloop.last %}
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
         </div>
         {% endfor %}
     </div>
 
-    <div class="col-2 d-none d-lg-block">
-        <div id="navbar-year" class="nav nav-pills flex-column sticky-top" style="top: 80px">
-            {% for year in pubs_by_year %}
-            <a class="nav-link d-block" href="#year-{{ year.name }}">{{ year.name }}</a>
-            {% endfor %}
+    <div class="col-3 d-none d-lg-block">
+        <div class="sticky-top" style="top: 100px;">
+            <div class="card border-0 shadow-sm mb-4">
+                <div class="card-header bg-primary text-white py-3">
+                    <h6 class="mb-0"><i class="fas fa-list me-2"></i>Quick Navigation</h6>
+                </div>
+                <div class="card-body p-0">
+                    <div id="navbar-year" class="list-group list-group-flush">
+                        {% for year in pubs_by_year %}
+                        <a class="list-group-item list-group-item-action border-0 px-0 py-2 {% if forloop.first %}active{% endif %}" href="#year-{{ year.name }}">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span>{{ year.name }}</span>
+                                <span class="badge bg-primary bg-gradient rounded-pill">{{ year.items | size }}</span>
+                            </div>
+                        </a>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+
+            <div class="card border-0 shadow-sm">
+                <div class="card-body p-4 text-center">
+                    <i class="fas fa-info-circle text-primary mb-3"></i>
+                    <h6 class="mb-3">Statistics</h6>
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <h4 class="text-primary mb-0">{{ site.publications | size }}</h4>
+                            <small class="text-muted">Total Papers</small>
+                        </div>
+                        <div class="col-6">
+                            {% assign years = pubs_by_year | size %}
+                            <h4 class="text-primary mb-0">{{ years }}</h4>
+                            <small class="text-muted">Years</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-
 </div>
+
+<style>
+/* Custom styles for publications */
+.accordion-button:not(.collapsed) {
+    background-color: #f8f9fa;
+    color: #0d6efd;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0,0,0,.125);
+}
+
+.badge {
+    font-weight: 500;
+}
+
+.list-group-item-action.active {
+    background-color: #e7f1ff;
+    color: #0d6efd;
+    border-left: 3px solid #0d6efd;
+}
+
+.list-group-item-action:not(.active):hover {
+    background-color: #f8f9fa;
+}
+</style>
