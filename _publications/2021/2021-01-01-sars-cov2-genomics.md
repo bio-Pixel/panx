@@ -8,7 +8,7 @@ abstract: >-
   Inferring SARS-CoV-2 functional genomics from viral transcriptome with identification of potential antiviral drugs and therapeutic targets.
 authors:
   - Xu Pan*
-  - X Li*
+  - X Li
   - S Ning
   - H Zhi
 links:
