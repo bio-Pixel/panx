@@ -7,7 +7,7 @@ pub_last:       ' <span class="badge badge-pill badge-publication badge-success"
 pub_date:       "2026"
 abstract: >-
   This study reveals how B-cell deficiency affects exercise capacity through liver glutamate metabolism remodeling.
-cover:          /assets/images/covers/cover2.jpg
+cover:          /assets/images/covers/covercell.jpg
 authors:
   - Y Mao*
   - Z Xia*
