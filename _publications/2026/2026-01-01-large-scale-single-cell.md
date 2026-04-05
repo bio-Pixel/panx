@@ -5,7 +5,7 @@ selected:       true
 pub_date:       "2026"
 abstract: >-
   Large-scale single-cell analysis of pancreatic ductal adenocarcinoma to understand tumor heterogeneity and microenvironment.
-cover:          /assets/images/covers/coverPDAC.jpg
+cover:          /assets/images/covers/coverPDAC.png
 pub_last:       ' <span class="badge badge-pill badge-publication badge-success">Under Review</span>'
 authors:
   - Xu Pan
