@@ -16,25 +16,26 @@ orcid: 0000-0000-0000-0000
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    I am a Ph.D. candidate in Basic Medical Sciences at Tsinghua University, working at the interface of
-    cancer systems biology, bioinformatics, and multi-omics analysis. My research focuses on understanding
-    tumor ecosystem heterogeneity and microenvironment organization through integrative analysis of
+    I am a Ph.D. candidate in Basic Medical Sciences at Tsinghua University, working at the intersection of
+    cancer systems biology, bioinformatics, and multi-omics analysis. My research focuses on elucidating
+    tumor ecosystem heterogeneity and microenvironmental organization through the integrative analysis of
     single-cell genomics, spatial transcriptomics, and proteomics.
   </p>
   <p>
-    My work includes building high-resolution atlases of tumor vasculature at single-cell resolution (Nature, 2024),
-    deciphering re-epithelialization programs in pancreatic ductal adenocarcinoma (Cancer Cell, in press),
-    and identifying prognostic biomarkers through epigenomic and proteomic profiling. I am particularly
-    interested in translating multi-omics insights into clinically relevant mechanisms that shape cancer
-    progression and therapeutic response. Outside of academia, I love reading and exploring new frontiers
-    in biomedical research.
+    My work includes constructing high-resolution atlases of tumor vasculature (Nature, 2024) and pancreatic
+    cancer at single-cell resolution, uncovering metabolic dynamics before and after exercise in B-deficient
+    mouse models (Cell, in press), and identifying cancer biomarkers through epigenomic and proteomic
+    profiling. I am particularly interested in translating multi-omics discoveries into clinically
+    actionable insights that inform cancer progression and therapeutic response. Outside of academia,
+    I enjoy reading and exploring emerging frontiers in biomedical research.
   </p>
   <p>
-    I am on the academic job market in the 2025 Fall cycle. Please feel free to reach out if you think
-    I could be a good fit!
+    <strong>I will be on the academic job market in the Fall 2026 cycle. Please feel free to reach out if you think
+    my background may be a good fit—I would be delighted to connect!</strong>
+  </p>
   </p>
 
-portrait_url: /assets/images/photos/portrait.jpg
+portrait_url: assets/images/photos/portrait.jpg
 portrait_caption: >-
   Photo of Xu Pan
 
