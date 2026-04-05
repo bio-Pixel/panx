@@ -85,7 +85,7 @@
             {%- assign display_name = name | append: mark -%}
         {%- endif -%}
 
-        {%- if name != "Xu Pan" and mark == "" -%}
+        {%- if mark == "" -%}
             {%- assign display_name = display_name | prepend: "*" -%}
         {%- endif -%}
 

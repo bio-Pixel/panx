@@ -1,9 +1,7 @@
-primary_name: "Xu"
-secondary_name: "Pan"
+primary_name: "Xu Pan"
 navbar_name: "Xu Pan"
 
 positions:
-- name: Ph.D. Candidate
 - name: Tsinghua University
   logo: /assets/images/badges/tsinghua.png
 
@@ -17,7 +15,7 @@ orcid: 0000-0000-0000-0000
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    I am a Ph.D. candidate in Basic Medical Sciences at Tsinghua University, working at the interface of
+    I am a Ph.D. student in Basic Medical Sciences at Tsinghua University, working at the interface of
     cancer systems biology, bioinformatics, and multi-omics analysis. My research focuses on understanding
     tumor ecosystem heterogeneity and microenvironment organization through integrative analysis of
     single-cell genomics, spatial transcriptomics, and proteomics.
