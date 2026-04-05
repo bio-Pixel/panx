@@ -4,6 +4,7 @@ navbar_name: "Xu Pan"
 
 positions:
 - name: Tsinghua University
+  logo: assets/images/badges/tsinghua.png
 
 email: "panx9623@gmail.com"
 cv_link: https://panx9623.github.io/cv.pdf
@@ -25,29 +26,28 @@ short_bio: >-
     cancer at single-cell resolution, uncovering metabolic dynamics before and after exercise in B-deficient
     mouse models (Cell, in press), and identifying cancer biomarkers through epigenomic and proteomic
     profiling. I am particularly interested in translating multi-omics discoveries into clinically
-    actionable insights that inform cancer progression and therapeutic response.
-  </p>
-  <p>
-    Outside of academia, I enjoy reading and exploring emerging frontiers in biomedical research.
+    actionable insights that inform cancer progression and therapeutic response. Outside of academia,
+    I enjoy reading and exploring emerging frontiers in biomedical research.
   </p>
   <p>
     <strong>I will be on the academic job market in the Fall 2026 cycle. Please feel free to reach out if you think
     my background may be a good fit—I would be delighted to connect!</strong>
   </p>
+  </p>
 
-portrait_url: /assets/images/photos/portrait.jpg
+portrait_url: assets/images/photos/portrait.jpg
 portrait_caption: >-
   Photo of Xu Pan
 
 education:
 - name: Tsinghua University
-  logo: /assets/images/badges/tsinghua.png
+  logo: assets/images/badges/tsinghua.png
   position: >-
     Ph.D. in Basic Medical Sciences<br/>
     Advisor: Yupei Zhao
   date: Sep. 2023 - present
 - name: Harbin Medical University
-  logo: /assets/images/badges/hmu.png
+  logo: assets/images/badges/hmu.png
   position: B.S. and M.S. in Bioinformatics
   date: Sep. 2015 - Jul. 2023
 

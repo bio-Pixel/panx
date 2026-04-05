@@ -14,6 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 baseurl: "/academic-homepage" # the subpath of your site, e.g. /blog
+title: "Xu Pan - Academic Homepage"
 
 # Build settings
 markdown: kramdown
@@ -32,7 +33,7 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-# timezone: Asia/Shanghai
+timezone: Asia/Shanghai
 
 collections:
   - publications
