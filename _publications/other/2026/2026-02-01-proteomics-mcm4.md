@@ -2,7 +2,6 @@
 title:          "Proteomics Profiling Identifies MCM4 as a Prognostic Biomarker for Postoperative Metastasis in Solid Pseudopapillary Neoplasms of the Pancreas"
 date:           2026-02-01 00:01:00 +0800
 selected:       false
-pub_post:       "In Press"
 pub:            "Modern Pathology"
 pub_date:       "2026"
 abstract: >-
@@ -26,7 +25,6 @@ authors:
   - W Wang
   - Y Zhao
   - J Peng
-  - et al.
 links:
   Paper: https://doi.org/10.1016/j.modpat.2026.100970
 ---
