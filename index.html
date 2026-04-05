@@ -24,15 +24,12 @@ navbar_title: Home
         {% endif %}
 
         {% if site.data.display.homepage.show_selected_publications %}
-        {% assign pubs = site.publications | where: "selected", true %}
-        {% if pubs %}
-        {% assign pubs = pubs | sort: "date" | reverse %}
+        {% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
         {%
         include widgets/publication_card.html
         publications=pubs
         title='<i class="fas fa-star"></i> Selected Publications'
         %}
-        {% endif %}
         {% endif %}
     </div>
 </div>

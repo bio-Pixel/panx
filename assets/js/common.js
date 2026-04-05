@@ -14,7 +14,7 @@ $(function () {
                 element.css('background-image', 'none');
                 element.css('min-height', '0');
             } else if (element.is('div')) {
-                // set the style to background-size: cover; 
+                // set the style to background-size: cover;
                 element.css('background-size', 'cover');
                 element.css('background-position', 'center');
             }

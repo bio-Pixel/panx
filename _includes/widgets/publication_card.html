@@ -1,14 +1,31 @@
-{% assign publications = include.publications %}
-<div class="my-3 p-0 bg-white shadow-sm rounded-xl">
-    <h6 class="border-bottom border-gray p-3 mb-0">
-        {% if include.title %}{{ include.title }}{% else %}<i class="fas fa-star"></i> Selected Recent Publications{% endif %} 
-        <a href="{{ 'publications' | relative_url }}">(view all <i class="fas fa-angle-double-right"></i>)</a>
-    </h6>
-    {% for item in publications limit:include.limit %}
-        {% include widgets/publication_item.html item=item first=false last=false %}    
-    {% endfor %}
-    <h6 class="d-block p-3 mt-0 text-right">
-        <a href="{{ 'publications' | relative_url }}">All publications <i class="fas fa-angle-double-right"></i></a>
-    </h6>
+<div class="card border-0 shadow-sm bg-white">
+    <div class="card-body p-5">
+        <h2 class="h4 card-title mb-4">{{ title }}</h2>
+        <div class="mb-3">
+            {% for pub in publications %}
+            <div class="media mb-3">
+                {% if pub.cover %}
+                <img src="{{ pub.cover | relative_url }}" alt="{{ pub.title }}" class="mr-3 rounded" style="width: 80px;">
+                {% endif %}
+                <div class="media-body">
+                    <h5 class="mt-0 mb-1">{{ pub.title }}</h5>
+                    <div class="small text-muted">
+                        {% for author in pub.authors %}
+                        {{ author }}{% unless forloop.last %}, {% endunless %}
+                        {% endfor %}
+                    </div>
+                    <div class="small text-muted">{{ pub.pub }} {{ pub.pub_date }}</div>
+                    <p class="card-text">{{ pub.abstract | truncate: 150 }}</p>
+                    {% if pub.links %}
+                    <div class="mt-2">
+                        {% for link in pub.links %}
+                        <a href="{{ link.url }}" class="btn btn-sm btn-outline-primary" target="_blank">{{ link.name }}</a>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
 </div>
-

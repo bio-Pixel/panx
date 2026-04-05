@@ -1,26 +1,30 @@
 ---
 layout: default
-title : Homepage
+title : Homepage (Layout 2)
 navbar_title: Home (Layout 2)
 ---
-{% include widgets/profile_card.html %}
 
-{% if site.data.display.homepage.show_experience %}
-    {% include widgets/experience_card.html %}
-{% endif %}
+<div class="container-lg mt-5">
+    <h1 class="display-4 text-center mb-5">Welcome to My Academic Homepage</h1>
 
-{% if site.data.display.homepage.show_news %}
-    {% assign count_news = site.news | size %}
-    {% if count_news > 0 %}
-        {% include widgets/news_card.html limit=site.data.display.homepage.num_news %}
-    {% endif %}
-{% endif %}
+    <div class="row">
+        <div class="col-lg-4 mb-4">
+            {% include widgets/profile_card.html %}
+        </div>
+        <div class="col-lg-8">
+            <div class="card border-0 shadow-sm bg-white mb-4">
+                <div class="card-body p-5">
+                    <h2 class="h4 card-title mb-4">Research Highlights</h2>
+                    {% include widgets/publication_card.html publications=site.publications title='<i class="fas fa-star"></i> Featured Publications' %}
+                </div>
+            </div>
 
-{% if site.data.display.homepage.show_selected_publications %}
-    {% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
-    {% 
-        include widgets/publication_card.html 
-        publications=pubs
-        title='<i class="fas fa-star"></i> Selected Publications'
-    %}
-{% endif %}
+            <div class="card border-0 shadow-sm bg-white">
+                <div class="card-body p-5">
+                    <h2 class="h4 card-title mb-4">Recent News</h2>
+                    {% include widgets/news_card.html %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
