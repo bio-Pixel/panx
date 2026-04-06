@@ -1,0 +1,62 @@
+primary_name: "Xu Pan"
+secondary_name: "Xu Pan"
+navbar_name: "Xu Pan"
+
+positions:
+- name: Tsinghua University
+  logo: assets/images/badges/tsinghua.png
+
+email: "panx9623@gmail.com"
+cv_link: https://panx9623.github.io/cv.pdf
+gscholar: t6gDZSUAAAAJ
+github: bio-Pixel
+linkedin: xu-pan-6aa9353b8
+orcid: 0009-0000-9886-2853
+
+short_bio_text_justify: false
+short_bio: >-
+  <p>
+    I am a Ph.D. candidate in Basic Medical Sciences at Tsinghua University, working at the intersection of
+    cancer systems biology, bioinformatics, and multi-omics analysis. My research focuses on elucidating
+    tumor ecosystem heterogeneity and microenvironmental organization through the integrative analysis of
+    single-cell genomics, spatial transcriptomics, and proteomics.
+  </p>
+  <p>
+    My work includes constructing high-resolution atlases of tumor vasculature (Nature, 2024) and pancreatic
+    cancer at single-cell resolution, uncovering metabolic dynamics before and after exercise in B-deficient
+    mouse models (Cell, in press), and identifying cancer biomarkers through epigenomic and proteomic
+    profiling. I am particularly interested in translating multi-omics discoveries into clinically
+    actionable insights that inform cancer progression and therapeutic response. Outside of academia,
+    I enjoy reading and exploring emerging frontiers in biomedical research.
+  </p>
+  <p>
+    <strong style="color: orange;">With an expected Ph.D. completion in October 2026, I will be entering the academic job market thereafter. 
+    I would be glad to connect if my background may be of interest to your group or institution.</strong>
+  </p>
+  </p>
+
+portrait_url: assets/images/photos/portrait.jpg
+
+education:
+- name: Tsinghua University
+  logo: assets/images/badges/tsinghua.png
+  position: >-
+    Ph.D. in Basic Medical Sciences<br/>
+    Advisor: Yupei Zhao
+  date: Sep. 2023 - present
+- name: Harbin Medical University
+  logo: assets/images/badges/hmu.png
+  position: B.S. and M.S. in Bioinformatics
+  date: Sep. 2015 - Jul. 2023
+
+awards:
+- name: Doctoral Student Program of the Young S&T Talents Cultivation Project, China
+  date: 2025
+- name: Life Star Scholarship, Center for Life Sciences (CLS), Tsinghua University
+  date: 2025
+- name: Outstanding Papers of Sichuan-Chongqing Science and Technology Academic Conference
+  date: 2024
+- name: Representative Achievements of Chongqing Basic Research
+  date: 2024
+- name: National Scholarship for Postgraduates, China
+  date: 2023
