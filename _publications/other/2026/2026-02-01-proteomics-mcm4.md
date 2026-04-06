@@ -6,6 +6,7 @@ pub:            "Modern Pathology"
 pub_date:       "2026"
 abstract: >-
   Proteomics profiling identifies MCM4 as a prognostic biomarker for postoperative metastasis.
+cover:          /assets/images/covers/1-s2.0-S0893395226X20014-cov200h.gif
 authors:
   - R He
   - Y Liu
