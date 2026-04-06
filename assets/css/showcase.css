@@ -1,4 +1,5 @@
 /* Showcase Section Styles */
+
 #showcase {
     background-color: #ffffff;
 }
@@ -45,6 +46,10 @@
     line-height: 1.6;
 }
 
+.badge-info {
+    background-color: #17a2b8;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .showcase-image {
@@ -52,25 +57,21 @@
     }
 }
 
-/* Image placeholder styles */
-.img-placeholder {
-    background-color: #f8f9fa;
-    border: 2px dashed #dee2e6;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #6c757d;
+/* Card styling enhancement */
+.card {
+    border-radius: 0.8rem !important;
 }
 
-/* Card overlay for image placeholders */
-.card-img-overlay-text {
-    background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 100%);
-    color: white;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 1rem;
-    border-bottom-left-radius: 0.8rem;
-    border-bottom-right-radius: 0.8rem;
+.card-img-top {
+    border-top-left-radius: 0.8rem !important;
+    border-top-right-radius: 0.8rem !important;
+}
+
+/* Lazy loading placeholder */
+img.lazy {
+    background-image: url('/assets/images/loading.gif');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 50px 50px;
+    min-height: 80px;
 }
