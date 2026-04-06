@@ -1,0 +1,197 @@
+{
+  "task": "Design and draft a showcase section for my personal academic homepage. Please first generate the HTML/content structure and placeholder layout, then clearly list what images/assets are needed for each showcase block, and finally organize everything into a clean insertion-ready package so I can manually add the final images later.",
+  "goal": "Create a polished homepage showcase section that presents my research trajectory in a clear and visually compelling way for future academic job applications.",
+  "context": {
+    "audience": [
+      "faculty search committees",
+      "potential postdoc mentors",
+      "future collaborators",
+      "academic visitors to my website"
+    ],
+    "tone": [
+      "professional",
+      "clean",
+      "scholarly",
+      "modern",
+      "visually structured"
+    ],
+    "style_preferences": [
+      "avoid clutter",
+      "highlight only selected flagship work",
+      "show a clear research progression",
+      "balance biology, computation, and translation",
+      "make the section easy for me to update later"
+    ]
+  },
+  "showcase_strategy": {
+    "recommended_blocks": 3,
+    "logic": [
+      "Block 1 should emphasize atlas-scale single-cell work",
+      "Block 2 should emphasize pancreatic cancer ecosystem heterogeneity and the PANCOSMOS resource",
+      "Block 3 should emphasize mechanism-oriented or translational work, so the page does not look like it only contains descriptive atlases"
+    ],
+    "rationale": "The section should communicate that I can build atlases, interpret ecosystem structure, and generate mechanistic or translational insights."
+  },
+  "blocks": [
+    {
+      "id": "vascular_atlas",
+      "title": "Tumor Vascular Atlas",
+      "subtitle": "Single-cell dissection of tumor vascular heterogeneity and angiogenic programs.",
+      "purpose": "This block should showcase my vascular atlas work and establish me as someone capable of building high-resolution single-cell maps with biological interpretation.",
+      "content_requirements": {
+        "text": [
+          "Write a concise title and 2–4 sentence summary.",
+          "Emphasize single-cell atlas construction.",
+          "Mention tumor vascular heterogeneity and angiogenesis.",
+          "Keep wording accessible for a broad academic audience."
+        ],
+        "visual_layout": [
+          "Use two visual slots side by side or stacked depending on page width.",
+          "Visual 1: a representative single-cell atlas figure.",
+          "Visual 2: a schematic or conceptual illustration of tumor angiogenesis / vascular remodeling."
+        ],
+        "optional_links": [
+          "paper link",
+          "journal link",
+          "preprint link"
+        ]
+      },
+      "image_assets_needed": [
+        {
+          "name": "vascular_single_cell_atlas",
+          "description": "A clean representative figure showing the vascular single-cell atlas.",
+          "preferred_content": [
+            "UMAP or atlas overview",
+            "clearly labeled endothelial/vascular populations",
+            "publication-quality panel or cropped figure"
+          ]
+        },
+        {
+          "name": "angiogenesis_schematic",
+          "description": "A schematic or conceptual model illustrating tumor angiogenesis or vascular evolution.",
+          "preferred_content": [
+            "process model",
+            "lineage/progression illustration",
+            "tumor vessel remodeling concept"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pdac_ecosystem",
+      "title": "PDAC Ecosystem Heterogeneity",
+      "subtitle": "Large-scale single-cell and spatial dissection of pancreatic cancer microenvironmental diversity.",
+      "purpose": "This block should present my pancreatic cancer ecosystem work as a flagship systems-biology study and also highlight PANCOSMOS as a field-facing resource.",
+      "content_requirements": {
+        "text": [
+          "Write a concise title and 2–4 sentence summary.",
+          "Emphasize ecosystem heterogeneity rather than only cell annotation.",
+          "Mention integration of single-cell and spatial transcriptomic analyses.",
+          "Include a short introduction to PANCOSMOS as an interactive resource."
+        ],
+        "visual_layout": [
+          "Use one main scientific image plus a smaller linked PANCOSMOS logo/resource card.",
+          "Main visual: one representative figure for PDAC ecosystem heterogeneity.",
+          "Secondary visual: PANCOSMOS logo or branded resource tile with link."
+        ],
+        "optional_links": [
+          "paper link",
+          "resource link",
+          "database/platform link"
+        ]
+      },
+      "image_assets_needed": [
+        {
+          "name": "pdac_ecosystem_main_figure",
+          "description": "A representative figure illustrating PDAC ecosystem heterogeneity.",
+          "preferred_content": [
+            "ecotype/TME subtype summary",
+            "spatial organization figure",
+            "ecosystem-level overview figure"
+          ]
+        },
+        {
+          "name": "pancosmos_logo",
+          "description": "Logo or clean badge for PANCOSMOS with external link.",
+          "preferred_content": [
+            "transparent PNG or SVG if possible",
+            "high resolution",
+            "consistent with homepage style"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mechanism_or_translation",
+      "title": "Mechanism and Translational Insights",
+      "subtitle": "From spatially resolved biology to clinically relevant hypotheses.",
+      "purpose": "This block should prevent the homepage from looking purely descriptive. It should show that I can move from atlas-scale observation toward mechanism or translational relevance.",
+      "preferred_direction": [
+        "ADA2–TLS immunometabolic mechanism in PDAC",
+        "or epigenomic / biomarker / translational multi-omics work if that fits the page better"
+      ],
+      "content_requirements": {
+        "text": [
+          "Write a concise title and 2–4 sentence summary.",
+          "Frame the work as mechanism-oriented or translation-oriented.",
+          "Avoid overly technical wording.",
+          "Show progression from discovery to biological or clinical significance."
+        ],
+        "visual_layout": [
+          "Use one strong visual.",
+          "Prefer a mechanism model, spatial validation figure, or translational workflow graphic."
+        ],
+        "optional_links": [
+          "paper link",
+          "preprint link",
+          "project link"
+        ]
+      },
+      "image_assets_needed": [
+        {
+          "name": "mechanism_or_translation_figure",
+          "description": "A representative figure for the third block.",
+          "preferred_content": [
+            "ADA2–TLS spatial image",
+            "mechanistic model",
+            "immune niche figure",
+            "or biomarker/translational workflow image"
+          ]
+        }
+      ]
+    }
+  ],
+  "implementation_instructions": {
+    "step_1": "Draft the showcase section in HTML first, with polished text, placeholders for images, and consistent card-based or section-based layout.",
+    "step_2": "Use placeholder image filenames and comments so I can easily replace them later.",
+    "step_3": "After drafting the section, produce a separate checklist of all required images/assets I need to prepare.",
+    "step_4": "Then produce a final organized deliverable containing: (1) the HTML block, (2) suggested CSS if needed, and (3) the asset checklist.",
+    "step_5": "Keep all text editable and modular so I can update titles, summaries, and links later."
+  },
+  "output_format_requirements": {
+    "need_html": true,
+    "need_css": true,
+    "need_asset_checklist": true,
+    "need_placeholder_filenames": true,
+    "need_clean_comments": true,
+    "avoid_overengineering": true,
+    "avoid_javascript_unless_necessary": true
+  },
+  "design_notes": {
+    "layout_preference": [
+      "clean academic homepage style",
+      "responsive layout",
+      "cards or alternating sections both acceptable",
+      "strong whitespace and visual hierarchy"
+    ],
+    "content_density": "moderate",
+    "visual_priority": "high",
+    "do_not_do": [
+      "do not overload with too many projects",
+      "do not make it look like a publication dump",
+      "do not use excessive animation",
+      "do not require final images before drafting the structure"
+    ]
+  },
+  "final_request_to_claude": "Please first write the showcase section structure and polished text using placeholders, then tell me exactly which images/assets you need from me, and finally organize everything into a clean insertion-ready output so I can manually replace the placeholders later."
+}
