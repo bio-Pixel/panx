@@ -6,7 +6,7 @@ pub:            "Oncogene"
 pub_date:       "2022"
 abstract: >-
   This study reveals how enhancer methylation dynamics regulate transcriptional circuits across multiple cancer types.
-coverOncogene.png
+cover:          /assets/images/covers/coverOncogene.png
 authors:
   - Xu Pan
   - X Li
