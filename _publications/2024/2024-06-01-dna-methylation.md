@@ -6,6 +6,7 @@ pub:            "Epigenetics"
 pub_date:       "2024"
 abstract: >-
   This study investigates how DNA methylation heterogeneity driven by tumor immune microenvironment affects prognosis in glioma.
+cover:          /assets/images/covers/coverEpi.jpeg
 authors:
   - S Ma*
   - Xu Pan*
