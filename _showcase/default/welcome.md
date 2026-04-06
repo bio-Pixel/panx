@@ -1,25 +1,23 @@
 ---
 show: false
-width: 12
-date: 2024-01-01 00:01:00 +0800
-group: "Research Overview"
-class: "card border-0 shadow-sm bg-white mb-4"
+width: 8
+date: 2024-01-12 00:01:00 +0800
 ---
 
 <div class="p-4">
+    <h2>Welcome to Showcase!</h2>
+    <hr />
     <p>
-        This showcase highlights my key research contributions in cancer biology, focusing on single-cell genomics, spatial transcriptomics, and tumor microenvironment analysis. My work aims to understand the complex cellular interactions that drive cancer progression and therapeutic resistance.
+        <code>Showcase</code> is a page where you can show off almost anything you want. It can be the photo of your pets, your favorite books, your favorite projects, or anything else you want to show to the world.
     </p>
     <p>
-        The featured projects represent my research trajectory from descriptive atlases to mechanistic insights and translational applications. All work is published in high-impact journals including <em>Nature</em>.
+        You can create a new showcase item by creating a new file in the <code>_showcase</code> folder. It gives you the highest flexibility to customize the item using any HTML code.
     </p>
     <p>
-        <strong>Key Research Areas:</strong>
-        <ul>
-            <li>Tumor vascular biology and angiogenesis</li>
-            <li>Pancreatic cancer ecosystem heterogeneity</li>
-            <li>Immunometabolic interactions in cancer</li>
-            <li>Therapeutic target discovery</li>
-        </ul>
+        Cards are ordered by the <code>date</code> field in the front matter in descending order. The <code>width</code> field is used to determine the width of the card, ranging from 1 to 12.
+        Layout is done by the <a href="https://masonry.desandro.com/" target="_blank">Masonry</a> library.
+    </p>
+    <p>
+        For a tidy layout, it is recommended to set the width of the cards to be either multiple of 3 or multiple of 4 for all cards, except for small badges that do not take up much space (width=1).
     </p>
 </div>
