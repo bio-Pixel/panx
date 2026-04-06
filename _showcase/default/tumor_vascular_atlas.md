@@ -7,7 +7,7 @@ class: "card border-0 shadow-sm bg-white h-100"
 ---
 
 <div class="h-100 d-flex flex-column">
-    <img data-src="/assets/images/showcase/TVMmap.png" class="lazy w-100 rounded-xl-top" src="{{ '/assets/images/empty_300x200.png' | relative_url }}" alt="Tumor Vascular Map" style="height: 250px; object-fit: cover;">
+    <img data-src="{{ 'assets/images/showcase/TVMmap.png' | relative_url }}" class="lazy w-100 rounded-xl-top" src="{{ '/assets/images/empty_300x200.png' | relative_url }}" alt="Tumor Vascular Map" style="height: 250px; object-fit: cover;">
     <div class="p-4 flex-grow-1">
         <h4 class="mb-3">Tumor Vascular Atlas</h4>
         <p class="mb-3">
