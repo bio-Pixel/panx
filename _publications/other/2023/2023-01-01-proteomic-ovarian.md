@@ -6,6 +6,7 @@ pub:            "Nature Communications"
 pub_date:       "2023"
 abstract: >-
   Proteomic characterization of epithelial ovarian cancer delineates molecular signatures and therapeutic targets.
+cover:          /assets/images/covers/b7003af33a87e950352a2ef34d644443fbf2b3111ea5_url.webp
 authors:
   - T-T Gong
   - S Guo
