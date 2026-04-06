@@ -6,6 +6,7 @@ pub:            "Briefings in Bioinformatics"
 pub_date:       "2022"
 abstract: >-
   This study identifies epigenomic signatures as indicators for immunophenotype and predicts immunotherapy benefits.
+cover:          /assets/images/covers/coverBiB.jpeg
 authors:
   - Xu Pan
   - C Zhang
