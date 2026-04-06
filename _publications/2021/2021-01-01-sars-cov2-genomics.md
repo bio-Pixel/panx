@@ -5,7 +5,7 @@ pub:            "Cell & Bioscience"
 pub_date:       "2021"
 abstract: >-
   Inferring SARS-CoV-2 functional genomics from viral transcriptome with identification of potential antiviral drugs and therapeutic targets.
-cover:          /assets/images/covers/coverCB.jpg
+cover:          /assets/images/covers/coverCB.jpeg
 authors:
   - Xu Pan
   - X Li
