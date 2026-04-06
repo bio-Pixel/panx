@@ -7,7 +7,7 @@ class: "card border-0 shadow-sm bg-white h-100"
 ---
 
 <div class="h-100 d-flex flex-column">
-    <img data-src="/assets/images/showcase/angiogenesis_mechanism.png" class="lazy w-100 rounded-xl-top" src="{{ '/assets/images/empty_300x200.png' | relative_url }}" alt="Angiogenesis Mechanism" style="height: 250px; object-fit: cover;">
+    <img data-src="/assets/images/showcase/sprouting.gif" class="lazy w-100 rounded-xl-top" src="{{ '/assets/images/empty_300x200.png' | relative_url }}" alt="Angiogenesis Mechanism" style="height: 250px; object-fit: cover;">
     <div class="p-4 flex-grow-1">
         <h4 class="mb-3">Angiogenesis Mechanism</h4>
         <p class="mb-3">
