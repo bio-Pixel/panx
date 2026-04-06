@@ -7,7 +7,7 @@ pub_last:       ' <span class="badge badge-pill badge-publication badge-success"
 pub_date:       "2026"
 abstract: >-
   A conserved re-epithelialization program underlies malignancy in pancreatic ductal adenocarcinoma.
-cover:          /assets/images/covers/coverCC.jepg
+cover:          /assets/images/covers/coverCC.jpeg
 authors:
   - M Zhuo
   - Y Li
