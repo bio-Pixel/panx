@@ -2,4 +2,5 @@ homepage:
   show_experience: true
   show_news: true
   show_selected_publications: true
+  show_research_interests: true
   num_news: 10
