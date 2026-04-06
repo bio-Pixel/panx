@@ -1,6 +1,6 @@
 ---
 title:          "Comprehensive characterization genetic regulation and chromatin landscape of enhancer-associated long non-coding RNAs and their implication in human cancer"
-date:           2022-09-01 00:01:00 +0800
+date:           2022-01-01 00:01:00 +0800
 selected:       true
 pub:            "Briefings in Bioinformatics"
 pub_date:       "2022"
