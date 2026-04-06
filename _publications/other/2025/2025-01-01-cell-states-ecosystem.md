@@ -6,6 +6,7 @@ pub:            "Clinical Cancer Research"
 pub_date:       "2025"
 abstract: >-
   The dynamically evolving cell states and ecosystem from benign nevi to melanoma.
+cover:          /assets/images/covers/m_clincanres_31_12_cover.png
 authors:
   - X Li
   - X Zhang
