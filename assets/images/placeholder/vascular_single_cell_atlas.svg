@@ -1,0 +1,24 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  <text x="400" y="300" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#6c757d">
+    Vascular Single Cell Atlas Placeholder
+  </text>
+  <text x="400" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#6c757d">
+    UMAP visualization of endothelial cells
+  </text>
+  <!-- Simulated UMAP plot -->
+  <g transform="translate(50, 50)">
+    <circle cx="100" cy="100" r="30" fill="#e74c3c" opacity="0.7"/>
+    <circle cx="250" cy="150" r="40" fill="#3498db" opacity="0.7"/>
+    <circle cx="400" cy="100" r="25" fill="#2ecc71" opacity="0.7"/>
+    <circle cx="550" cy="200" r="35" fill="#f39c12" opacity="0.7"/>
+    <circle cx="300" cy="250" r="20" fill="#9b59b6" opacity="0.7"/>
+    <circle cx="500" cy="300" r="30" fill="#1abc9c" opacity="0.7"/>
+    <text x="100" y="110" text-anchor="middle" font-size="12" fill="white">EC1</text>
+    <text x="250" y="160" text-anchor="middle" font-size="12" fill="white">EC2</text>
+    <text x="400" y="110" text-anchor="middle" font-size="12" fill="white">EC3</text>
+    <text x="550" y="210" text-anchor="middle" font-size="12" fill="white">EC4</text>
+    <text x="300" y="260" text-anchor="middle" font-size="12" fill="white">EC5</text>
+    <text x="500" y="310" text-anchor="middle" font-size="12" fill="white">EC6</text>
+  </g>
+</svg>

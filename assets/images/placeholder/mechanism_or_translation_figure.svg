@@ -1,0 +1,84 @@
+<svg width="1200" height="600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="600" fill="#f8f9fa"/>
+  <text x="600" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#2c3e50">
+    ADA2-TLS Immunometabolic Axis in PDAC
+  </text>
+
+  <!-- Section 1: Spatial Context -->
+  <g transform="translate(50, 100)">
+    <text x="0" y="0" font-size="18" font-weight="bold" fill="#34495e">Spatial Context</text>
+
+    <!-- Tumor region -->
+    <ellipse cx="200" cy="150" rx="150" ry="100" fill="#e74c3c" opacity="0.3"/>
+    <text x="200" y="155" text-anchor="middle" font-size="16" fill="#2c3e50">Tumor Core</text>
+
+    <!-- TLS region -->
+    <rect x="350" y="100" width="200" height="100" fill="#3498db" opacity="0.3" rx="10"/>
+    <text x="450" y="155" text-anchor="middle" font-size="16" fill="#2c3e50">Tertiary Lymphoid Structure</text>
+
+    <!-- Distance annotation -->
+    <line x1="350" y1="150" x2="300" y2="150" stroke="#34495e" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <text x="325" y="140" text-anchor="middle" font-size="14" fill="#34495e">~100μm</text>
+
+    <!-- Cell types -->
+    <circle cx="180" cy="180" r="8" fill="#e74c3c"/>
+    <text x="180" y="200" text-anchor="middle" font-size="12" fill="#2c3e50">Tumor Cell</text>
+
+    <circle cx="430" cy="130" r="8" fill="#2ecc71"/>
+    <text x="430" y="150" text-anchor="middle" font-size="12" fill="#2c3e50">T Cell</text>
+
+    <circle cx="470" cy="170" r="8" fill="#f39c12"/>
+    <text x="470" y="190" text-anchor="middle" font-size="12" fill="#2c3e50">B Cell</text>
+  </g>
+
+  <!-- Section 2: Mechanism -->
+  <g transform="translate(50, 300)">
+    <text x="0" y="0" font-size="18" font-weight="bold" fill="#34495e">Mechanism: Metabolic Crosstalk</text>
+
+    <!-- ADA2 in tumor -->
+    <rect x="50" y="30" width="120" height="60" fill="#e74c3c" opacity="0.5" rx="5"/>
+    <text x="110" y="65" text-anchor="middle" font-size="14" fill="white">Tumor Cell</text>
+    <text x="110" y="80" text-anchor="middle" font-size="12" fill="white">↑ ADA2</text>
+
+    <!-- Arrow -->
+    <path d="M 170 60 L 250 60" stroke="#34495e" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+    <text x="210" y="50" text-anchor="middle" font-size="14" fill="#34495e">Adenosine</text>
+
+    <!-- Immune cell -->
+    <rect x="250" y="30" width="120" height="60" fill="#3498db" opacity="0.5" rx="5"/>
+    <text x="310" y="65" text-anchor="middle" font-size="14" fill="white">T Cell</text>
+    <text x="310" y="80" text-anchor="middle" font-size="12" fill="white">A2A receptor</text>
+
+    <!-- Effect -->
+    <path d="M 370 60 L 450 60" stroke="#e74c3c" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+    <rect x="450" y="40" width="150" height="40" fill="#e74c3c" opacity="0.7" rx="5"/>
+    <text x="525" y="65" text-anchor="middle" font-size="14" fill="white">T cell exhaustion</text>
+  </g>
+
+  <!-- Section 3: Therapeutic Implication -->
+  <g transform="translate(700, 200)">
+    <text x="0" y="0" font-size="18" font-weight="bold" fill="#34495e">Therapeutic Strategy</text>
+
+    <!-- Treatment box -->
+    <rect x="0" y="30" width="200" height="80" fill="#2ecc71" opacity="0.3" rx="10" stroke="#27ae60" stroke-width="2"/>
+    <text x="100" y="60" text-anchor="middle" font-size="16" fill="#2c3e50">ADA2 Inhibitor</text>
+    <text x="100" y="85" text-anchor="middle" font-size="14" fill="#2c3e50">+ Anti-PD-1</text>
+
+    <!-- Result arrow -->
+    <path d="M 100 110 L 100 140" stroke="#27ae60" stroke-width="3" fill="none" marker-end="url(#arrowhead-green)"/>
+
+    <!-- Response -->
+    <rect x="50" y="150" width="100" height="40" fill="#f39c12" rx="5"/>
+    <text x="100" y="175" text-anchor="middle" font-size="14" fill="white">Enhanced response</text>
+  </g>
+
+  <!-- Arrow marker definitions -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#34495e"/>
+    </marker>
+    <marker id="arrowhead-green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#27ae60"/>
+    </marker>
+  </defs>
+</svg>
