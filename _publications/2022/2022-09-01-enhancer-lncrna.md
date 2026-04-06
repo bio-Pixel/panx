@@ -6,6 +6,7 @@ pub:            "Briefings in Bioinformatics"
 pub_date:       "2022"
 abstract: >-
   Comprehensive characterization of genetic regulation and chromatin landscape of enhancer-associated lncRNAs in cancer.
+cover:          /assets/images/covers/coverBiB.jpeg
 authors:
   - X Li*
   - Xu Pan*
