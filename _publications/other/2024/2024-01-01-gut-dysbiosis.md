@@ -6,6 +6,7 @@ pub:            "Advanced Science"
 pub_date:       "2024"
 abstract: >-
   Gut dysbiosis drives inflammatory bowel disease through the CCL4L2-VSIR axis in glycogen storage disease.
+cover:          /assets/images/covers/gutjnl-2022-February-71-2-e1-F1.medium.gif
 authors:
   - J Lan
   - Y Zhang
