@@ -1,7 +1,6 @@
 ---
 title:          "DNA methylation heterogeneity attributable to a complex tumor immune microenvironment prompts prognostic risk in glioma"
 date:           2024-06-01 00:01:00 +0800
-selected:       true
 pub:            "Epigenetics"
 pub_date:       "2024"
 abstract: >-
