@@ -7,8 +7,6 @@ class: "card border-0 shadow-sm bg-white mb-4"
 ---
 
 <div class="p-4">
-    <h2>Research Showcase</h2>
-    <hr />
     <p>
         This showcase highlights my key research contributions in cancer biology, focusing on single-cell genomics, spatial transcriptomics, and tumor microenvironment analysis. My work aims to understand the complex cellular interactions that drive cancer progression and therapeutic resistance.
     </p>
