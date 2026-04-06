@@ -6,6 +6,7 @@ pub:            "Gut"
 pub_date:       "2022"
 abstract: >-
   Deviated and early unsustainable stunted development of gut microbiota in children with autism spectrum disorder.
+cover:          /assets/images/covers/gutjnl-2022-February-71-2-e1-F1.medium.gif
 authors:
   - M Lou
   - A Cao
