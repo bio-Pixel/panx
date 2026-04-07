@@ -1,6 +1,6 @@
 ---
 title:          "Large-Scale Single-Cell Dissection of Pancreatic Ductal Adenocarcinoma"
-date:           2026-01-01 00:01:00 +0800
+date:           2026-010-01 00:01:00 +0800
 selected:       true
 pub_date:       "2026"
 abstract: >-
