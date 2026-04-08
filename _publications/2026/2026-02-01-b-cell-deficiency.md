@@ -1,6 +1,6 @@
 ---
 title:          "B-cell deficiency limits exercise capacity by remodeling liver glutamate metabolism"
-date:           2026-12-01 00:01:00 +0800
+date:           2026-4-17 00:01:00 +0800
 selected:       true
 pub:            "Cell"
 pub_last:       ' <span class="badge badge-pill badge-publication badge-success">In Press</span>'
