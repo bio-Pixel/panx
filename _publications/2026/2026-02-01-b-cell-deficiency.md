@@ -3,7 +3,6 @@ title:          "B-cell deficiency limits exercise capacity by remodeling liver 
 date:           2026-4-17 00:01:00 +0800
 selected:       true
 pub:            "Cell"
-pub_last:       ' <span class="badge badge-pill badge-publication badge-success">In Press</span>'
 pub_date:       "2026"
 abstract: >-
   This study reveals how B-cell deficiency affects exercise capacity through liver glutamate metabolism remodeling.
