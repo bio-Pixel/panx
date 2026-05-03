@@ -3,7 +3,6 @@ title:          "A conserved re-epithelialization program underlies malignancy i
 date:           2026-01-01 00:01:00 +0800
 selected:       false
 pub:            "Cancer Cell"
-pub_last:       ' <span class="badge badge-pill badge-publication badge-success">In Press</span>'
 pub_date:       "2026"
 abstract: >-
   A conserved re-epithelialization program underlies malignancy in pancreatic ductal adenocarcinoma.
