@@ -38,5 +38,5 @@ authors:
   - M Chen
   - C David
 links:
-  Paper: 
+  Paper: https://authors.elsevier.com/c/1n0wE5TA51p0rP
 ---
