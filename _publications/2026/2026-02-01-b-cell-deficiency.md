@@ -14,5 +14,5 @@ authors:
   - W Xia
   - J Peng
 links:
-  Paper: https://authors.elsevier.com/c/1myLnL7PXy2dD
+  Paper: https://www.cell.com/cell/abstract/S0092-8674(26)00340-5
 ---
